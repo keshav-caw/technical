@@ -1,18 +1,30 @@
 import "../Navbar/Nav.css";
 import "../../App.css";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
     <div className="navbar">
-      <a href="/" className="brand">
+      <Link to={"/"} className="brand">
         {" PROJECT"}
-      </a>
+      </Link>
 
       <div className="menu">
-        <li>About us </li>
-        <li>Organizational Structure </li>
-        <li>Photo gallery </li>
-        <li>Others</li>
+        <Link to={"/about-us"}>
+          <li>About us </li>
+        </Link>
+        <Link to={"/organizational-structure"}>
+          <li>Organizational Structure </li>
+        </Link>
+        <Link to={"/gallery"}>
+          <li>Photo gallery </li>
+        </Link>
+        <Link to={"/contact-us"}>
+          <li>Contact us</li>
+        </Link>
+        <Link to={"/login"}>
+          <button>Login</button>
+        </Link>
       </div>
     </div>
   );

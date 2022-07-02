@@ -1,0 +1,14 @@
+.page-title {
+  height: 2rem;
+  margin: 1rem;
+  text-align: center;
+  color: rgb(34, 34, 230);
+}
+
+.page-content {
+  background: hsl(231, 83%, 96%);
+  padding: 2rem;
+  margin: 2rem;
+  color: rgb(4, 20, 34);
+  border-radius: 1rem;
+}

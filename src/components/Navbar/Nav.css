@@ -3,30 +3,46 @@
   justify-content: space-between;
   width: 100%;
   height: 3.5rem;
-  background-color: rgba(238, 238, 238, 0.842);
+  background-color: #ffffff;
   align-items: center;
-  border-bottom: solid 2px rgb(114, 133, 112);
+  /* border-bottom: solid 2px rgb(114, 133, 112); */
+  position: fixed;
+  top: 0;
+  overflow: hidden;
 }
 .brand {
   font-size: 1.6rem;
   font-weight: 600;
-  color: rgb(26, 110, 37);
+  color: #0957de;
   margin-left: 2rem;
 }
 .menu {
   display: flex;
   margin-right: 2rem;
+  align-items: center;
 }
 .menu li {
   cursor: pointer;
   margin-left: 2rem;
   font-size: 1rem;
-  font-weight: 600;
-  color: rgb(11, 85, 44);
+  font-weight: 500;
+  color: rgb(17, 19, 18);
 }
 
+button {
+  background-color: #0957de;
+  height: 2.5rem;
+  width: 6rem;
+  border: none;
+  border-radius: 0.3rem;
+  color: #f3f5f7;
+  font-size: medium;
+  cursor: pointer;
+  margin-left: 1rem;
+  font-weight: 600;
+}
 @media (max-width: 900px) {
-  .menu {
+  .menu li {
     display: none;
   }
 }
