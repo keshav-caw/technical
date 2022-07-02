@@ -1,16 +1,27 @@
 import "../Landing/Landing.css";
 import "../../App.css";
 import Nav from "../Navbar/Nav";
-import comingSoon from "../../assets/coming-soon.jpg";
+import Footer from "../Footer/Footer";
 
 export default function Landing() {
   return (
-    <main>
+    <>
       <Nav />
-      <div className="landing">
-        <h1>Coming Soon...</h1>
-        <img src={comingSoon} alt="Coming Soon" />
-      </div>
-    </main>
+
+      <main>
+        <div className="section">
+          <div>
+            <h1>Programs and Courses</h1>
+          </div>
+          <div>
+            <h1>Notices</h1>
+          </div>
+          <div>
+            <h1>Events</h1>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </>
   );
 }
