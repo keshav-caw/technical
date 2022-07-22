@@ -1,0 +1,52 @@
+.page-title {
+  height: 2rem;
+  margin: 1rem;
+  text-align: center;
+  color: rgb(34, 34, 230);
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: rgb(34, 34, 230);
+  width: 100%;
+}
+
+.input input {
+  font-size: large;
+}
+
+main{
+  display: grid;
+  place-items: center;
+}
+
+.main {
+  width: 40%;
+  margin:10rem auto;
+  background: hsl(231, 83%, 96%);
+  padding: 2rem;
+  color: rgb(4, 20, 34);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.padder {
+  padding:0.5rem 1rem;
+  width: 70%;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+  color: rgb(34, 34, 230);
+}
+
+.whitener {
+  margin-top: 1rem;
+  color: white;
+}

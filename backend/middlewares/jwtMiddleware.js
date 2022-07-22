@@ -1,9 +1,6 @@
 const jwt = require("jsonwebtoken")
 
 class JWTService{
-    constructor() {
-      //
-    }
     validate(token) {
         try {
             token = token.replace('Bearer ', '')
@@ -33,6 +30,7 @@ class JWTService{
             req.user = authToken;
             next();
         }else{
+        res.status(400);
             throw new Error("You have to be logged in for performing this operation");
         }
     }
